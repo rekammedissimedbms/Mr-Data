@@ -2,42 +2,25 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <!-- Pastikan viewport diatur untuk responsif -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mr. Data - Medical Record</title>
   
-  <!-- Link ke file favicon.png lokal -->
-  <link rel="icon" href="favicon.png?v=4" type="image/png">
+  <!-- Menggunakan favicon 1:1 baru dari Canva dengan cachebuster v=5 -->
+  <link rel="icon" href="favicon.png?v=5" type="image/png">
   
-  <!-- CSS untuk menangani masalah ikon gepeng dan tata letak -->
   <style>
-    /* Reset margin dan padding default browser */
     html, body {
       margin: 0;
       padding: 0;
       width: 100%;
       height: 100%;
       background-color: #eee;
-      overflow: hidden; /* Mencegah scrollbar pada halaman utama */
+      overflow: hidden;
     }
 
-    /* Kontainer untuk memaksa rasio aspek icon di tab browser (Trik ini untuk WebApp PWA) */
-    /* Perlu diperhatikan: Tidak semua browser mendukung penuh css untuk favicon, 
-       namun ini membantu dalam banyak kasus modern WebApp. */
-    :root {
-      color-scheme: light dark;
-      /* Trik untuk beberapa browser: memberi tahu browser bahwa ikon ini harus diperlakukan 
-         sebagai bagian dari web app dan mencoba mempertahankan aspek rasio asli */
-      image-rendering: -webkit-optimize-contrast;
-    }
-
-    /* Styling iframe agar mengisi seluruh layar */
     .iframe-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100dvh; /* Menggunakan dvh (dynamic viewport height) untuk mobile yang lebih baik */
+      width: 100%;
+      height: 100dvh;
       overflow: hidden;
     }
 
