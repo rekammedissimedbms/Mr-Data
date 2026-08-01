@@ -5,37 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mr. Data - Medical Record</title>
   
-  <!-- Ikon Medis Profesional untuk Tab Browser -->
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2966/2966327.png" type="image/png">
+  <!-- PENTING: Link ke file favicon.png yang baru Anda upload -->
+  <!-- Tambahkan ?v=2 di belakang nama file agar cache browser terupdate -->
+  <link rel="icon" href="favicon.png?v=2" type="image/png">
   
   <style>
     html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #eee;
-      overflow: hidden;
+      margin: 0; padding: 0; width: 100%; height: 100%; 
+      background-color: #eee; overflow: hidden;
     }
-
-    .iframe-container {
-      width: 100%;
-      height: 100dvh;
-      overflow: hidden;
-    }
-
-    iframe {
-      display: block;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
+    .iframe-container { width: 100%; height: 100dvh; overflow: hidden; }
+    iframe { display: block; width: 100%; height: 100%; border: none; }
   </style>
 </head>
 <body>
   <div class="iframe-container">
     <iframe
       id="app"
+      /* Link Aplikasi Anda Sudah Terpasang Disini */
       src="https://script.google.com/macros/s/AKfycbz9p_0sg_QWBBDjrjriLSRVV7UjVU-_ZsvZ6P7r5T-7voDmuVa8RBhtIcS4DYY1dqtwMg/exec"
       scrolling="yes"
       allowfullscreen="true"
